@@ -31,7 +31,7 @@ function removeUnwanted (source, itemsToRemove){
         console.log('Want: ' + wantedItems);
       } else {
         console.log('Not wanted: ' + itemsToRemove[i]);
-      }
+      }     
     } 
   }
   return wantedItems;
