@@ -1,7 +1,9 @@
+let reverseWord = '';
+
 function reverse(params) {
   
   const length = params.length;
-  let reverseWord = '';
+  console.log(params);
 
   // iterate the array
   for (let i = 0; i < length; i++) {
@@ -13,4 +15,4 @@ function reverse(params) {
   }
 }
 
-console.log(params);
+console.log('EOF');

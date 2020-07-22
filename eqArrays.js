@@ -28,7 +28,7 @@ const assertEqual = function(actual, expected) {
 };
 
 //console.log(assertEqual([1,2,3], [1,2,3]));
-console.log(assertEqual(['1','2','3'], ['1','2','3']));
+//console.log(assertEqual(['1','2','3'], ['1','2','3']));
 
 
 
