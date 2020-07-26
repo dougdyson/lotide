@@ -16,9 +16,6 @@ eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
 
 const assertEqual = function(actual, expected) {
   
-  let arrayA = '';
-  let arrayB = '';
-  
   for (let a = 0; a < actual.length; a++) {
     if (actual[a] !== expected[a] ) {
      return false;   
@@ -28,7 +25,4 @@ const assertEqual = function(actual, expected) {
 };
 
 //console.log(assertEqual([1,2,3], [1,2,3]));
-//console.log(assertEqual(['1','2','3'], ['1','2','3']));
-
-
-
+console.log(assertEqual(['1','2','3'], ['1','2','3']));

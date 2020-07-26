@@ -26,7 +26,6 @@ const countOnly = function(allItems, itemsToCount) {
       } else {
         output[element] = 1;
       }
-
     }
   })
   return (output);

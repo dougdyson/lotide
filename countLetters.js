@@ -11,21 +11,26 @@ It's not that we want to know how many H's are in this sentence?, because that w
 We need it report back multiple numbers.
 
 */
+  
+// declare countLetters(string)
+const countLetters = function (sentence) {
 
+  // declare return object
+  let letterObject = {};
+  let spacelessSentence = ''; // for use in removing spaces
 
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    return `\u2705\u2705\u2705 Assertion Passed: ${actual} === ${expected}`;
-  } else {
-    return `\u274C\u274C\u274C Assertion Failed: ${actual} === ${expected}`;
+  spacelessSentence = sentence.split(" ").join("")
+
+  // iterate through string and peel off each character
+  for (let i = 0; i < spacelessSentence.length; i++) {
+    const currentLetter = spacelessSentence[i];
+    if (!letterObject[currentLetter]){ // first instance of letter because it is undefined
+      letterObject[currentLetter] = 1;
+    } else { // subsequent instances of letter
+      letterObject[currentLetter]++;
+    }
   }
-};
-
-function countLetters (sentence) {
-
-  // get length of string
-  return sentence.length;
+  return letterObject;
 }
-
-console.log(countLetters('LHL'));
+console.log(countLetters('LHL hello'));
 

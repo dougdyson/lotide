@@ -19,13 +19,6 @@ const findKeyByValue = function name(params, genre ) {
       matchedKey = iterator;
     }
   }
-
-  // for (let i = 0; i < keys.length; i++) {
-  //   const element = keys[i];
-  //   if (element === genre) {
-  //     matchedKey = element;
-  //   }
-  // }
   return matchedKey;
 }
 console.log(findKeyByValue(bestTVShowsByGenre, 'sci_fi'));
