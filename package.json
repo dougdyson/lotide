@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@unfamousdyson/lotide",
   "version": "1.0.0",
   "description": "lotide lighthouse labs exercise",
   "main": "assertArrayEqual.js",
@@ -10,7 +10,7 @@
     "test": "./node_modules/mocha/bin/mocha"
   },
   "keywords": [],
-  "author": "",
+  "author": "@hatheadninja",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.2.0",
